@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuliner | Visit to Yogyakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/kuliner.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="index.html">Visit to Yogyakarta</a>
+
+      <div class="lang">
+        <button type="button" class="lang-btn" id="langBtn">
+          <span id="langLabel">ID</span>
+        </button>
+        <ul class="lang-menu" id="langMenu">
+          <li>
+            <button type="button" data-lang="id">Bahasa Indonesia</button>
+          </li>
+          <li>
+            <button type="button" data-lang="en">English</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <main class="kuliner">
+      <header class="kuliner-header">
+        <h1>Kuliner</h1>
+        <p>
+          Tiga sajian khas Yogyakarta yang wajib dicicipi selama perjalanan
+          Anda.
+        </p>
+      </header>
+
+      <div class="kuliner-list">
+        <!-- Kotak 1: Gudeg -->
+        <a class="kuliner-card" href="gudeg.html">
+          <div class="kuliner-img">
+            <img src="../IMG/gudeg.png" alt="Gudeg" />
+          </div>
+          <div class="kuliner-body">
+            <h2>Gudeg</h2>
+            <p>
+              Makanan khas Jogja berbahan dasar nangka muda yang dimasak lama
+              dengan santan dan gula jawa, menghasilkan cita rasa manis-gurih
+              dan biasa disajikan bersama krecek pedas, telur, serta ayam bacem.
+            </p>
+          </div>
+        </a>
+
+        <!-- Kotak 2: Bakpia Pathok -->
+        <a class="kuliner-card" href="bakpia.html">
+          <div class="kuliner-img">
+            <img src="../IMG/bakpia.jpg" alt="Bakpia Pathok" />
+          </div>
+          <div class="kuliner-body">
+            <h2>Bakpia Pathok</h2>
+            <p>
+              Kue olahan tepung berlapis khas Jogja dengan isian kacang hijau,
+              cokelat, atau keju yang memiliki tekstur renyah di luar dan lembut
+              di dalam, cocok sebagai camilan maupun oleh-oleh.
+            </p>
+          </div>
+        </a>
+
+        <!-- Kotak 3: Sate Klatak -->
+        <a class="kuliner-card" href="sate.html">
+          <div class="kuliner-img">
+            <img src="../IMG/sate.jpg" alt="Sate Klatak" />
+          </div>
+          <div class="kuliner-body">
+            <h2>Sate Klatak</h2>
+            <p>
+              Sate kambing muda unik khas Imogiri yang ditusuk menggunakan
+              jeruji besi sepeda agar matang merata, dibumbui simpel dengan
+              garam, lalu disajikan bersama kuah gulai yang gurih berempah.
+            </p>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <div class="back-bar">
+      <a class="btn-back" href="index.html"> <span aria-hidden="true">←</span> Kembali ke Beranda </a>
+    </div>
+
+    <footer class="footer">
+      <span>&copy; 2026 Visit to Yogyakarta</span>
+    </footer>
+    <script src="../JS/lang.js"></script>
+  </body>
+</html>

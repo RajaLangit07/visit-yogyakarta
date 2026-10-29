@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Visit to Yogyakarta</title>
+    <link href="../CSS/style.css" rel="stylesheet" />
+    <script defer="" src="../JS/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="../CSS/navbar.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-auto">
+      <a class="brand" href="index.html">Visit to Yogyakarta</a>
+      <div class="lang">
+        <button type="button" class="lang-btn" id="langBtn">
+          <span id="langLabel">EN</span>
+        </button>
+        <ul class="lang-menu" id="langMenu">
+          <li>
+            <button type="button" data-lang="id">Bahasa Indonesia</button>
+          </li>
+          <li>
+            <button type="button" data-lang="en">English</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section
+        aria-label="Explore Indonesian destinations"
+        class="hero"
+        id="hero"
+      >
+        <div class="selector">
+          <div aria-hidden="true" class="pointer"></div>
+          <button
+            aria-label="Previous destination"
+            class="arrow prev"
+            type="button"
+          >
+            ❮
+          </button>
+          <div class="track-wrap">
+            <div class="track" id="track"></div>
+          </div>
+          <button
+            aria-label="Next destination"
+            class="arrow next"
+            type="button"
+          >
+            ❯
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="../JS/lang.js"></script>
+  </body>
+</html>
