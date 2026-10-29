@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata | Visit to Yogyakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/wisata.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="index.html">Visit to Yogyakarta</a>
+
+      <div class="lang">
+        <button type="button" class="lang-btn" id="langBtn">
+          <span id="langLabel">ID</span>
+        </button>
+        <ul class="lang-menu" id="langMenu">
+          <li>
+            <button type="button" data-lang="id">Bahasa Indonesia</button>
+          </li>
+          <li>
+            <button type="button" data-lang="en">English</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <main class="wisata">
+      <header class="wisata-header">
+        <h1>Wisata</h1>
+        <p>
+          Tiga destinasi yang wajib masuk daftar perjalanan Anda di Yogyakarta.
+        </p>
+      </header>
+
+      <div class="wisata-list">
+        <!-- Kotak 1: Jalan Malioboro -->
+        <a class="wisata-card" href="malioboro.html">
+          <div class="wisata-img">
+            <img
+              src="https://images.unsplash.com/photo-1543874768-af0b9c4090d5?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Papan nama Jalan Malioboro"
+            />
+          </div>
+          <div class="wisata-body">
+            <h2>Jalan Malioboro</h2>
+            <p>
+              Pusat keramaian Yogyakarta yang penuh dengan toko batik,
+              kerajinan, dan jajanan kaki lima. Cocok dinikmati dengan berjalan
+              santai, terutama saat malam hari.
+            </p>
+          </div>
+        </a>
+
+        <!-- Kotak 2: Candi Prambanan -->
+        <a class="wisata-card" href="prambanan.html">
+          <div class="wisata-img">
+            <img
+              src="https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?q=80&w=1706&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Candi Prambanan"
+            />
+          </div>
+          <div class="wisata-body">
+            <h2>Candi Prambanan</h2>
+            <p>
+              Kompleks candi Hindu megah dari abad ke-9 dengan menara-menara
+              tinggi yang menjulang. Salah satu warisan arsitektur terindah di
+              Indonesia.
+            </p>
+          </div>
+        </a>
+
+        <!-- Kotak 3: Pantai Parangtritis -->
+        <a class="wisata-card" href="parangtritis.html">
+          <div class="wisata-img">
+            <!-- Ganti src dengan foto Parangtritis milik Anda -->
+            <img
+              src="https://images.pexels.com/photos/38290024/pexels-photo-38290024.jpeg"
+              alt="Pantai Parangtritis"
+            />
+          </div>
+          <div class="wisata-body">
+            <h2>Pantai Parangtritis</h2>
+            <p>
+              Pantai ikonik di selatan Yogyakarta dengan hamparan pasir luas,
+              ombak besar, dan pemandangan matahari terbenam yang memukau.
+            </p>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <div class="back-bar">
+      <a class="btn-back" href="index.html"> <span aria-hidden="true">←</span> Kembali ke Beranda </a>
+    </div>
+
+    <footer class="footer">
+      <span>&copy; 2026 Visit to Yogyakarta</span>
+    </footer>
+    <script src="../JS/lang.js"></script>
+  </body>
+</html>
