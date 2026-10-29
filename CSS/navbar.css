@@ -1,0 +1,125 @@
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 24px 16px 5%;   /* kiri sejajar konten, tombol bahasa rapat ke kanan */
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 500;
+  color: #1a1a1a; text-decoration: none;
+}
+
+/* tombol bahasa */
+.lang { position: relative; }
+
+.lang-btn {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #ddd; border-radius: 10px;
+  background: #fff; color: #555;
+  font: 600 15px 'Manrope', system-ui, sans-serif;
+  cursor: pointer;
+}
+.lang-btn:hover { border-color: #1e2a6b; }
+
+/* menu dropdown */
+.lang-menu {
+  display: none;
+  position: absolute; right: 0; top: calc(100% + 8px);
+  min-width: 190px; list-style: none;
+  background: #fff; border: 1px solid #e3e3e3; border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+  overflow: hidden;
+}
+.lang-menu.open { display: block; }
+
+.lang-menu button {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%; padding: 12px 16px;
+  border: 0; background: none; text-align: left; cursor: pointer;
+  font: 500 14px 'Manrope', system-ui, sans-serif; color: #3a3a3a;
+}
+.lang-menu button:hover { background: #f6f7fb; color: #1e2a6b; }
+
+/* navbar auto-hide (home): melayang di atas hero.
+   Saat kursor jauh: latar transparan, tulisan & tombol bahasa tetap terlihat (putih).
+   Saat kursor dekat: latar putih muncul halus. */
+.navbar-auto {
+  position: fixed; left: 0; right: 0; top: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: background .3s ease, box-shadow .3s ease;
+}
+.navbar-auto .brand {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .55);
+  transition: color .3s ease, text-shadow .3s ease;
+}
+.navbar-auto .lang-btn {
+  background: rgba(255, 255, 255, .18);
+  border-color: rgba(255, 255, 255, .6);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  transition: background .3s ease, border-color .3s ease, color .3s ease;
+}
+
+.navbar-auto.show,
+.navbar-auto:hover,
+.navbar-auto:focus-within {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+.navbar-auto.show .brand,
+.navbar-auto:hover .brand,
+.navbar-auto:focus-within .brand {
+  color: #1a1a1a;
+  text-shadow: none;
+}
+.navbar-auto.show .lang-btn,
+.navbar-auto:hover .lang-btn,
+.navbar-auto:focus-within .lang-btn {
+  background: #fff;
+  border-color: #ddd;
+  color: #555;
+  backdrop-filter: none;
+}
+
+/* bahasa yang sedang aktif di dropdown */
+.lang-menu button.active { background: #eef0fa; color: #1e2a6b; font-weight: 700; }
+
+@media (max-width: 700px) {
+  .navbar { padding: 12px 16px 12px 20px; }
+  .brand { font-size: 22px; }
+}
+
+/* tombol kembali: sticky di kiri bawah layar, berhenti tepat di atas footer */
+.back-bar {
+  position: sticky; bottom: 20px; z-index: 90;
+  padding: 0 5%;
+  margin: 24px 0 20px;
+  pointer-events: none;          /* area kosong di samping tombol tetap bisa diklik */
+}
+
+.btn-back {
+  pointer-events: auto;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid #ddd; border-radius: 10px;
+  background: #fff; color: #555;
+  font: 600 15px 'Manrope', system-ui, sans-serif;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+  transition: border-color .2s ease, color .2s ease, transform .2s ease;
+}
+.btn-back:hover {
+  border-color: #1e2a6b; color: #1e2a6b;
+  transform: translateX(-3px);
+}
+
+@media (max-width: 700px) {
+  .back-bar { padding: 0 20px; bottom: 16px; }
+  .btn-back { font-size: 14px; }
+}
