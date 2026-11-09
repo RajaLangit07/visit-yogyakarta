@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata | Visit to Yogyakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/wisata.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="index.html">Visit to Yogyakarta</a>
+
+      <div class="nav-right">
+        <a class="nav-link" href="gallery.html">Galeri</a>
+        <div class="lang">
+        <button type="button" class="lang-btn" id="langBtn">
+          <span id="langLabel">ID</span>
+        </button>
+        <ul class="lang-menu" id="langMenu">
+          <li>
+            <button type="button" data-lang="id">Bahasa Indonesia</button>
+          </li>
+          <li>
+            <button type="button" data-lang="en">English</button>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+
+    <main class="wisata">
+      <header class="wisata-header">
+        <h1>Wisata</h1>
+        <p>
+          Tiga destinasi yang wajib masuk daftar perjalanan Anda di Yogyakarta.
+        </p>
+      </header>
+
+      <div class="wisata-list">
+        <!-- Kotak 1: Jalan Malioboro -->
+        <a class="wisata-card" href="malioboro.html">
+          <div class="wisata-img">
+            <img
+              src="../IMG/malio.jpg"
+              alt="Papan nama Jalan Malioboro"
+            />
+          </div>
+          <div class="wisata-body">
+            <h2>Jalan Malioboro</h2>
+            <p>
+              Pusat keramaian Yogyakarta yang penuh dengan toko batik,
+              kerajinan, dan jajanan kaki lima. Cocok dinikmati dengan berjalan
+              santai, terutama saat malam hari.
+            </p>
+          </div>
+        </a>
+
+        <!-- Kotak 2: Candi Prambanan -->
+        <a class="wisata-card" href="prambanan.html">
+          <div class="wisata-img">
+            <img
+              src="../IMG/candii.avif"
+              alt="Candi Prambanan"
+            />
+          </div>
+          <div class="wisata-body">
+            <h2>Candi Prambanan</h2>
+            <p>
+              Kompleks candi Hindu megah dari abad ke-9 dengan menara-menara
+              tinggi yang menjulang. Salah satu warisan arsitektur terindah di
+              Indonesia.
+            </p>
+          </div>
+        </a>
+
+        <!-- Kotak 3: Pantai Parangtritis -->
+        <a class="wisata-card" href="parangtritis.html">
+          <div class="wisata-img">
+            <!-- Ganti src dengan foto Parangtritis milik Anda -->
+            <img
+              src="../IMG/parangtritis.avif"
+              alt="Pantai Parangtritis"
+            />
+          </div>
+          <div class="wisata-body">
+            <h2>Pantai Parangtritis</h2>
+            <p>
+              Pantai ikonik di selatan Yogyakarta dengan hamparan pasir luas,
+              ombak besar, dan pemandangan matahari terbenam yang memukau.
+            </p>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <div class="back-bar">
+      <a class="btn-back" href="index.html"> <span aria-hidden="true">←</span> Kembali ke Beranda </a>
+    </div>
+
+    <!-- Info situs & sosial media -->
+    <section class="site-info">
+      <div class="site-info-inner">
+        <div class="site-brand">
+          <a href="index.html" class="brand-name">Visit to Yogyakarta</a>
+          <p>Panduan wisata, budaya, dan kuliner Yogyakarta dalam satu tempat.</p>
+        </div>
+        <div class="site-follow">
+          <h3>Ikuti Kami</h3>
+          <ul>
+                <li><a href="https://www.instagram.com/karisasi_/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16.9" cy="7.1" r="1.2" fill="currentColor"/></svg></span>'Uwaimir</a></li>
+                <li><a href="https://www.instagram.com/acoticc.a/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16.9" cy="7.1" r="1.2" fill="currentColor"/></svg></span>Asyraf</a></li>
+                <li><a href="https://www.instagram.com/niscala.akhdan/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16.9" cy="7.1" r="1.2" fill="currentColor"/></svg></span>Niscala</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>&copy; 2026 Team SMKMUGA</span>
+    </footer>
+    <script src="../JS/lang.js"></script>
+  </body>
+</html>
